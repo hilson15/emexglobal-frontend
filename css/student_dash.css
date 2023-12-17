@@ -1,0 +1,851 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #e6f3ff;
+
+}
+.left-main-mob{
+    display: none;
+}
+.main-container{
+    /* margin: 10% auto; */
+    width: 85%;
+    /* height: 80%; */
+    margin: 5% auto;
+    display: flex;
+    height: 100vh;
+    border-radius: 15px;
+    background-color: #e5f9ff;
+}
+/* This is the left side bar */
+.left-main{
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 18%;
+    height: 97%;
+    background-color: white;
+    padding-right: 5%;
+    position: sticky;
+    display: block;
+
+}
+.menuList{
+    display: none;
+}
+#menuButton{
+    display: none;
+}
+#menuButtonMob{
+    display: none;
+}
+.sidelinks ul {
+    width: 90%;
+}
+.sidelinks ul li{
+    margin: 10% 0%;
+    margin-left: -20%;
+    padding: 8% 2%;
+    list-style: none;
+    border-radius: 10px;
+    
+    
+}
+.sidelinks span{
+    margin-left: 5%;
+}
+
+/* the apply link */
+#apply{
+    background-color: red;
+    border-radius: 10px;
+    /* color: white; */
+}
+#apply span{
+    color: white;
+}
+
+.sidelinksMob{
+    display: none;
+}
+
+.sidelinks ul li a{
+    /* color: white; */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    color:rgb(0, 106, 255);
+   
+}
+
+.sidelinks ul li:hover{
+    background-color: rgb(238, 236, 236);
+}
+
+/* this is the profile picture at the bottom left side of the left-main div */
+.dp{
+    background-color: rgba(70, 168, 216, 0.2);
+    width: 50%;
+    height: 15%;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.dp span{
+    text-align: center;
+    color: rgb(0, 106, 255);
+    margin-left: 5%;
+    margin-right: 0%;
+    font-weight: bolder;
+    
+    
+}
+
+.dp img{
+    width: 70%;
+    width: 70%;
+    border-radius: 50%;
+
+}
+#dp{
+    margin-top: 30%;
+    background-color: rgba(102, 204, 255, 0.8);;
+
+}
+#dp img{
+    margin: 15%;
+    box-shadow: 1px 2px 8px;
+    border: 2px solid white;
+}
+
+/* this is the middle container, it contains the company name, date, and the cards */
+.mid-main{
+    width: 63%;
+    height: 97%;
+    margin-top: 1%;
+    /* padding: 0px 30px; */
+    background-color:	#f7fdfe;
+}
+.top-main{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.welcome{
+    margin-left: 5%;
+}
+.welcome h3{
+    color: rgb(0, 106, 255);
+
+}
+/* Date display styling */
+#dateUpdate{
+    margin-top: 3%;
+    margin-right: 5%;
+    color: rgb(0, 106, 255);
+    font-weight: bolder;
+
+}
+.search-bar{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+.search-bar i{
+    position: absolute;
+    font-size: 20px;
+    top: 20%;
+    left: 3%;
+}
+
+.search-bar input{
+    width: 90%;
+    padding: 1%;
+    padding-left: 8%;
+    font-size: 18px;
+    /* color: #2980b9; */
+    border-radius: 20px;
+    border: 1px solid #3399ff;
+}
+/* here ends the styling for the search bar section and top side of the middle section of the page */
+
+.big-midbox{
+    width:90%;
+    background-position:right center;
+    background-size: auto 100%;
+    background-repeat:no-repeat;
+    height: 35%;
+    margin: 5% auto;
+    background: url('/images/coder.jpg')  right / 50% no-repeat, url('/images/behind.png') left / 30% no-repeat;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px;
+}
+
+.big-content{
+    background: linear-gradient(to right, rgba(51, 153, 255, 0.8) 50%, #3399ff 100%);
+    height: 100%;
+    width: 100%;
+    
+    position: relative;
+
+}
+.big-top h5{
+    margin-top: 5%;
+    padding-top: 1%;
+    margin-left: 4%;
+    color: white;
+}
+.card-flex{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-between;
+    /* padding: 20px 0; */
+}
+
+
+.front{
+    width: 100%;
+    height: 100%;
+    padding: 2% 5%;
+    position: relative;
+    background-color: rgba(248, 163, 5, 0.9);
+    border-radius: 10px;
+}
+
+/* the right side of the first line card container */
+.track-card{
+    width: 25%;
+    height: 58%;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 1% 2%;
+    background-color: rgba(102, 204, 255, 0.8);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+
+}
+#progress span{
+    font-weight: bolder;
+}
+.oransi{
+    background-color:rgba(248, 163, 5, 0.7) ;
+}
+
+.vihrea{
+    background-color: rgba(153, 204, 0, 0.7);
+}
+/* this is the progress bar styling */
+
+
+.track{
+    width: 90%;
+    /* height: 40%; */
+    background-color: rgb(255, 255, 255);
+    border: 1px gainsboro;
+    margin-top:5% ;
+    border-radius: 8px;
+}
+
+#not-admitted{
+    background-color: red;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+/* This is the styling for the progress bar */
+#trackBar{
+    width: 75%;
+    height: 3px;
+    background-color: #0dcf57;
+    border: 1px solid #2980b9;
+    border-radius: 8px;
+}
+
+/* styling for the upcoming event boxes */
+.upcoming{
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 15%;
+}
+
+/* first box in the upcoming even boxes */
+.box{
+    width: 30%;
+    border-radius: 5px;
+    margin: 0% 5%;
+    color: white;
+}
+.box1{
+    background-color:orange ;
+    height: 100%;
+    padding: 4% 4%;
+    display: flex;
+    
+}
+.box1 i{
+    font-size: 40px;
+    margin-right: 3%;
+}
+/* for the second box */
+.box2{
+    background-color:rgb(102, 204, 255) ;
+    height: 100%;
+    padding: 4% 4%;
+    display: flex;
+     
+}
+.box2 i{
+    font-size: 40px;
+    margin-right: 4%;
+}
+/* styling for the 3rd box */
+.box3{
+    background-color:rgb(153, 204, 0);
+    height: 100%;
+    padding: 4% 4%;
+    display: flex;
+     
+}
+.box3 i{
+    font-size: 40px;
+    margin-right: 4%;
+}
+
+
+/* here is the right side bar of the dashboard page */
+
+.right-main{
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 13%;
+    height: 97%;
+    background-color: white;
+    padding-right: 1%;
+    font-weight: bolder;
+}
+
+.account img{
+    width: 40%;
+    height: 40%;
+}
+#pix img{
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-style: double;
+}
+
+/* This is to hide the menu list so as to display them in as block when
+the profile picture is hovered on */
+.account-menu{
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 136, 255);
+    width: 8%;
+    padding: 1% 1%;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+
+/* hiding the icon which was supposed to be clicked for the menu to be displayed instead of hovering on the profile picture. this may be used in case we decide to change how that area functions */
+#pix i{
+    /* display: none; */
+    position: relative;
+    font-size: 90%;
+    color: rgb(0, 132, 255);
+    left: -14%;
+}
+.account-menu a{
+    display: block;
+    text-decoration: none;
+    margin: 10% 5%;
+    padding: 5% 3%;
+    color: white;
+}
+.account-menu a:hover{
+    /* background-color: #53a3e9; */
+    background-color: black;
+    border-radius: 10px;
+}
+
+.account:hover .account-menu{
+    display: block;
+}
+/* this is the end of the styling for the hovering and display of
+the menu in the right side bar */
+
+.projects{
+
+    padding: 3%;
+    margin-top: 5%;
+    
+
+    
+}
+
+
+.hidden-content {
+    display: none;
+  }
+
+  /* Style for the link that triggers the expansion/collapse */
+  .expansion-link {
+    cursor: pointer;
+    color: blue;
+    text-decoration: none;
+  }
+
+  .hidden-content a{
+      color: blue;
+      text-decoration: none;
+      margin-left: 10px;
+      padding: 10px 5px;
+  }
+
+
+/* Here are stylings for the messages displayed on the right pane they are children of projects */
+.msg{
+    color: rgb(0, 106, 255);
+    font-size: 15px;
+    text-align: center;
+    margin-top: 43%;
+    cursor: pointer;
+}
+.john{
+    display: flex;
+}
+.john img{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
+#em{
+    font-size: 12px;
+    color: black;
+    
+}
+#name{
+    color: rgb(0, 106, 255);
+    padding-left: 1%;
+    
+}
+.lee{
+    margin: 8% 0;
+}
+
+.current{
+    padding: 2%;
+    margin-top: 90%;
+}
+
+.current a{
+    font-size: 18px;
+    margin: 5% 0%;
+    text-decoration: none;
+}
+.current h3{
+    color: red;
+}
+/* I am hiding my mobile account menu here on the desktop. so i display it to none */
+.account-mob{
+    display: none;
+}
+
+
+
+/* This is where I start my mobile responsiveness */
+
+@media (min-width: 900px) and (max-width: 1200px){
+    .main-container{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+/* here the left div and menu are displayed */
+    .left-main{
+        display: block;
+    }
+    /* .menu-btn {
+        
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+    
+      .menu-btn:hover {
+        background-color: #2980b9;
+      }
+      #menuButton{
+          display: block;
+          height: 6%;
+          position: absolute;
+          top: 0%;
+          background-color: gray;
+      } */
+}
+
+
+@media (min-width: 300px) and (max-width: 985px){
+    
+.main-container{
+    /* margin: 10% auto; */
+    /* flex-direction: column; */
+    width: 100%; 
+}
+
+.left-main{
+    
+    width: 50%;
+    margin: 0;
+    display: none;
+    
+}
+.sidelinksMob{
+    /* background-color: white; */
+    margin-top: -28px;
+    
+}
+.sidelinksMob ul li{
+    margin: -2% 0%;
+    margin-left: -5%;
+    padding: 8% 2%;
+    list-style: none;
+    border-radius: 10px;  
+    
+}
+.sidelinksMob ul li a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+.sidelinksMob i{
+    margin-right: 10px;
+}
+/* .left-main-mob{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    background-color: white;
+    z-index: 5;
+} */
+
+#menuButtonMob{
+    display: block;
+    font-size: 25px;
+    /* background-color: lightgray; */
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    
+}
+
+.close-icon{
+    font-size: 27px;
+    position: relative;
+    top: 27px;
+    left: 10px;
+    
+
+}
+.mid-main{
+    width: 100%;
+    margin: 0;
+    margin-right: -5%;
+}
+
+.box{
+    width: 93%;
+    margin: 5px auto;
+    padding: 20px 0px;
+}
+
+.box1 span{
+    margin-right: 5px;
+}
+
+.box1 i{
+    font-size: 40px;
+    margin-left: 10%;
+    margin-right: 30%;
+}
+
+.box2 i{
+    font-size: 40px;
+    margin-left: 10%;
+    margin-right: 30%;
+}
+
+.box3 i{
+    font-size: 40px;
+    margin-left: 10%;
+    margin-right: 30%;
+}
+.upcoming{
+    flex-direction: column;
+}
+
+#apply{
+    background-color: red;
+    border-radius: 10px;
+    padding: 7px 0px;
+    width: 90%;
+
+    /* color: white; */
+}
+#apply span{
+    color: white;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.menu-btn {
+    /* background-color: #3498db; */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .menu-btn:hover {
+    background-color: #2980b9;
+  }
+  #menuButton{
+      display: block;
+      height: 6%;
+      position: absolute;
+      top: 0%;
+      background-color: gray;
+  }
+  
+  .right-main{
+      display: none;
+      /* width: 50px; */
+      /* position: absolute;
+      left: 90%; */
+      
+      
+  
+  }
+
+  /* .right-main{
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 13%;
+    height: 97%;
+    background-color: white;
+    padding-right: 1%;
+    font-weight: bolder;
+} */
+
+  /* .close-icon {
+    display: none;
+  } */
+
+
+
+.menuList{
+    display: none;
+
+}
+
+.welcome{
+    font-size: 12px;
+}
+
+#dateUpdate{
+    font-size: 12px;
+}
+
+.track-card{
+    width: 25%;
+    height: 58%;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 1% 2%;
+    /* background-color: rgba(102, 204, 255, 0.8); */
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+/* .account{
+    position: absolute;
+    display: none; 
+     top: 0; 
+    z-index: 2;
+    
+    left:75%;
+    top: 5%;
+} */
+
+/* .account img{
+    width: 30%;
+    
+} */
+
+/* this is where I displayed the profile icon and the menu-list underneath it. I hide it in the desktop version so I can use it here */
+.account-mob{
+    width: 18%;
+    display: block;
+    position: absolute;
+    right: 2%;
+    margin-left:5%;
+    top: 5%;
+
+
+}
+
+
+.account-mob img{
+    width: 50%;
+    height: 50%;
+   
+    
+}
+#pix-mob img{
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-style: double;
+    position: relative;
+    top: 1%;
+    right: -3%;
+}
+
+/* This is to hide the menu list so as to display them in as block when
+the profile picture is hovered on */
+.account-menu-mob{
+    display: none;
+    position: relative;
+    background-color:rgba(6, 109, 252, 0.73) ;
+    box-shadow: 6px 8px 15px ;
+    width: 100%;
+    padding: 1% 2%;
+    top: -5px;
+    border-radius: 10px;
+    z-index: 5;
+    
+}
+
+/* hiding the icon which was supposed to be clicked for the menu to be displayed instead of hovering on the profile picture. this may be used in case we decide to change how that area functions */
+#pix-mob i{
+    /* display: none; */
+    position: relative;
+    font-size: 90%;
+    color: rgb(0, 132, 255);
+    right: 15%;
+    top: -5%;
+}
+
+.account-menu-mob a{
+    display: block;
+    text-decoration: none;
+    margin: 10% 5%;
+    padding: 5% 3%;
+    color: white;
+    font-size: 8px;
+}
+.account-menu-mob a:hover{
+    background-color: black;
+}
+
+.account-mob:hover .account-menu-mob{
+    
+    display: block;
+}
+
+
+#pix img{
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 50%;
+    border-style: double;
+    
+}
+/* styling for the search input bar */
+.search-bar{
+    margin-top: 5%;
+}
+
+.search-bar i, input{
+    font-size: 10px;
+}
+/* this part controls the style for the zoom icon on the search bar */
+.search-bar i{
+    padding-left: 2%;
+    margin-top: 1%;
+    
+}
+.search-bar input{
+    padding-left: 10%;
+  
+}
+
+/* .left-main ul li{
+    font-size: 50px;
+} */
+
+    
+}
+
+/* this is the styling for the current date display */
+#dateUpdate{
+    margin-right:22%;
+    margin-top: 15px;
+}
+.big-midbox{
+    width: 96%;
+}
+/* this is the div used to style the first 3 boxes in the mid-main */
+.track-card{
+    width: 35%;
+    height: 58%;
+    margin-top: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 1% 1%;
+}
+/* Here I reduced the admission status text to avoid breakage when the dropdown is clicked */
+#not-admitted{
+    font-size: 8px;
+    padding: 2px;
+}
+
+
+
+
+
+
+

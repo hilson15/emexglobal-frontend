@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .dropdown{
+      background-color: aliceblue;
+  }
+ button{
+     font-size: 40px;
+     color: blue;
+ }
+
+ .dropMenu{
+     display: none;
+     width: 30%;
+ }
+ .dropMenu ul li{
+     margin: 8px 0;
+     list-style: none;
+     padding: 8px;
+ }
+
+ .dropMenu ul li a{
+     text-decoration: none;
+     color: rgb(86, 6, 6);
+ }
+ .dropMenu ul span{
+     margin-left: 10px;
+ }
+ .dropMenu ul li:hover{
+     background-color: darkblue;
+     color: white;
+ }
+ .dropMenu ul li a:hover{
+     color: white;
+ }
+  .team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: aliceblue;
+  }
+  
+  .instructor-box {
+    position: relative;
+    width: 30%;
+    margin: 10px;
+    overflow: hidden;
+  }
+  /* img{
+    border-radius: 60%;
+    height: 40%;
+    width: 20%;
+  } */
+  
+  .mirror {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to bottom, aliceblue, transparent);
+    z-index: 1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .profile-image{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  .social-links i{
+      margin: 0 5px;
+  }
+  .social-links i:hover{
+      background-color: black;
+      color: goldenrod;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .instructor-box {
+      width: 100%;
+    }
+
+    .dropMenu{
+        width: 100%;
+       
+    }
+    #dropBtn{
+      margin-top: 10px;
+      margin-left: 150px;
+      margin-right: 150px;
+      width: 15%;
+      background-color: transparent;
+    }
+
+   
+
+   
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Task</title>
+    <script src="https://kit.fontawesome.com/188d62c901.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/course-desc.css">
+</head>
+<body>
+   
+    
+        
+    <div class="main-flex">
+        <button id="navList"><i class="fa-solid fa-bars"></i></button>
+        <div class="sidebar">
+            
+                  <!--this is the left side bar -->
+        
+        
+            <!-- Sidebar content goes here -->
+            
+            <div class="menus">
+                <button id="closeIcon" class="close-icon">&#10006;</button>
+                <ul>
+                    <li><a href="index.html"> <i class="fa-solid fa-house"></i><span>Home</span> </a></li>
+
+                    <li><a href="digitalskills.html"><i class="fa-brands fa-digital-ocean"></i><span>Digital skills</span> </a></li>
+
+                    <li><a href="new-collaborator.html"><i class="fa-solid fa-people-group"></i><span>Collaborators</span> </a></li>
+
+                    <li><a href="contributor.html"><i class="fa-solid fa-person-chalkboard"></i><span>Contributors</span></a></li>
+
+                    <li><a href="profile-redesign.html"><i class="fa-solid fa-address-card"></i><span>Profile</span></a></li>
+
+                    <li><a href="#"><i class="fa-solid fa-list-check"></i><span class="expansion-link" onclick="toggleContent()">Tasks</span></a></li>
+                    <div class="hidden-content" id="expandableContent">
+                        <li><a href="new-task.html">Do Task</a></li>
+                        <li><a href="task-submit.html">Submit Task</a></li>
+                      </div>
+    
+                    <li id="apply"><a href="#">
+                        <span>Apply for internship</span></a></li>
+                </ul>
+            </div>
+            </div> <!--sidebar-->
+
+            <!-- creating the div for the main-section -->
+
+
+            <div class="main-section">
+                <!-- Here is the video part of the page -->
+                <div id="video-container">
+                    <div id="video">
+                      <img src="/images/ban.jpg">
+                     
+                    </div>
+                  
+                   
+                    </div>
+                   <!--this is where the video sectioin ends-->
+
+                <!-- the part below is where I select each course with a display of each descriptions below them -->
+                <div id="course-flex">
+                    <div class="course" onclick="showDescription(1)">What you'll learn</div>
+
+                    <div class="course" onclick="showDescription(2)">Course Content</div>
+
+                    <div class="course" onclick="showDescription(3)">Review</div>
+
+                    <div class="course" onclick="showDescription(4)" id="app-now"><a href="#">Apply Now</a>
+                        </div>
+                </div>
+
+                <!-- this is where each description is displayed -->
+                <div id="descriptions">
+                    <div id="description1" class="description">
+                       <li>Lorem ipsum dolor sit amet</li><br>
+                       <li>Lorem ipsum dolor sit amet</li><br>
+                       <li>Lorem ipsum dolor sit amet</li><br> 
+                       <li>Lorem ipsum dolor sit amet</li><br>
+                       <li>Lorem ipsum dolor sit amet</li><br>
+                       <li>Lorem ipsum dolor sit amet</li> 
+                    </div>
+                    <div id="description2" class="description">
+                        <h3>Requirement</h3>
+                        <li>Lorem ipsum dolor sit amet</li>
+                       <li>Lorem ipsum dolor sit amet</li>
+                       <li>Lorem ipsum dolor sit amet</li> 
+
+                       <div class="description-box">
+                           <h3>Description</h3>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam non repellat quibusdam expedita quisquam recusandae autem tempora nam sit eaque alias aliquam itaque sapiente, quod nisi. Eum excepturi culpa, ipsum autem nam mollitia nisi eius dolore modi fugit ratione est neque blanditiis rem quia id voluptate voluptas assumenda! Iure veniam mollitia facere debitis excepturi facilis beatae similique, voluptatem odit odio earum repellendus reprehenderit libero maiores quam adipisci asperiores accusamus in magni eos architecto est dignissimos? Error corrupti nostrum commodi. Debitis nemo at tenetur laborum culpa ex perspiciatis cumque sed cupiditate, quos et ipsa animi ducimus consequuntur. Officia, dolorem recusandae maxime quis beatae sit nisi, modi quod autem vitae, molestias temporibus voluptatem obcaecati dicta culpa aliquam veniam esse tempora saepe ad?</p>
+                       </div>
+                       
+                    </div>
+                    <div id="description3" class="description">
+                        <h3>Reviews</h3>
+                        <p>
+                            <h5>Garden Luis</h5>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quos?
+                        </p>
+
+                        <p>
+                            <h5>Hilson Iyke</h5>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quos?
+                        </p>
+
+                        <p>
+                            <h5>Lake Bond</h5>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, quos?
+                        </p>
+                    </div>
+                    <div id="description4" class="description">
+                        <!-- <h3>Instructors</h3>
+                        <p>
+                            <a href="#"><h5>Mike Dan</h5></a><br>
+
+                            <a href="#"><h5>Hilson Innocent</h5></a><br>
+
+                            <a href="#"><h5>Hilson Innocent</h5></a><br>
+
+                            <a href="#"><h5>Hilson Innocent</h5></a>
+
+
+                        </p> -->
+                    </div>
+                  </div>
+                </div>
+            </div><!--main-flex div for the main content aside the sidebar-->
+
+    </div><!--main-flex section div-->
+        
+
+    
+
+
+
+    <script src="cohort-close.js"></script>
+    <script src="cohort.js"></script>
+    <script src="course-desc.js"></script>
+    <script src="task-expand.js"></script>
+</body>
+</html>

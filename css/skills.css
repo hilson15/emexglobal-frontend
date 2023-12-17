@@ -1,0 +1,55 @@
+/* .collapse{
+    width: 60px;
+    background-color: #fff;
+} */
+.bg-dark{
+    /* width: 300px; */
+    background: transparent;
+}
+.sidelinks ul li{
+    padding-bottom: 30px;
+    list-style-type: none;
+}
+.sidelinks ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.sidelinks ul li span{
+    padding-left: 10px;
+}
+ /* h1{ 
+    color: #fff; 
+     margin: auto;
+}  */
+/* .container text-center .col{
+    border: 1px solid #333;
+} */
+.col img{
+    width: 350px;
+    height: 200px;
+}
+
+button{
+    background-color: #1d88ca;
+    color: white;
+    margin-bottom: 30px;
+    border-style: none;
+}
+
+.hidden-content {
+    display: none;
+  }
+
+  /* Style for the link that triggers the expansion/collapse */
+  .expansion-link {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+
+  .hidden-content a{
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+      padding: 10px 5px;
+  }

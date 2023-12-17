@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: Arial, 
+    'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    background-color: rgba(0, 0, 90, 0.1);
+    /* height: 100vh; */
+}
+
+.sidebar {
+    background-color:#0377de;
+    color: #fff;
+    padding: 20px;
+    width: 20%;
+    
+}
+.sidebar ul li{
+    list-style: none;
+    margin: 30px 0;
+    padding: 10px 8px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.sidebar ul li:hover{
+    background-color: darkblue;
+}
+.hidden-content {
+    display: none;
+  }
+
+  /* Style for the link that triggers the expansion/collapse */
+  .expansion-link {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+
+  .hidden-content a{
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+      padding: 10px 5px;
+  }
+
+
+
+
+
+
+.menus{
+    display: block;
+    margin-left: -20%;
+    font-size: 16px;
+}
+
+.menus i{
+    margin-right: 4%;
+}
+
+button{
+    display: none;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 80%;
+    background-color: rgba(0, 0, 90, 0.364);
+    /* background-color: #e6e6e6; */
+}
+
+.teacher {
+    flex:  15%; /* This is where I adjust the container for each picture */
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+    /* background-color: white; */
+     background-color: #e6e6e6af;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.teacher img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.social{
+    display: flex;
+   margin-top: 10px;
+   margin-left: 45px;
+   margin-right: 35px;
+}
+.social a i{
+    background-color: transparent;
+    margin: 0 10px;
+    padding: 6px;
+    color: white;
+    border-radius: 50%;
+   
+}
+
+.social a i:hover{
+    background-color: black;
+    color: goldenrod;
+}
+
+#apply {
+    background-color: red;
+    border-radius: 10px;
+}
+
+/* Adding media queries for responsiveness. this is for the smallest mobile screens */
+@media screen and (max-width: 1078px){
+    .teacher{
+        flex: 45%;
+    }
+    
+    .menus{
+        margin-left:-25%;
+        font-size: 15px;
+    }
+    h3{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .menus ul{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+}
+
+
+
+
+
+@media (min-width:300px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+       
+    }
+    body{
+        overflow-x: hidden;
+        
+    }
+
+    .sidebar, .main-section {
+        width: 100%;
+        
+    }
+
+    .teacher {
+        flex:  0 1  80%; /* Adjust for smaller screens */
+        margin-right: 45px;
+        
+    }
+
+    h3{
+        font-size: 20px;
+    }
+   
+    button{
+        color: white;
+        font-size: 28px;
+        display: block;
+        position: absolute;
+        top: 5%;
+        left: 3%;
+        color:rgba(0, 0, 0, 0.5) ;
+        
+    }
+
+    .menus{
+        display: none;
+        position: relative;
+        margin-left: 2%;
+        margin-top: -8%;
+    }
+
+    .menus ul{
+        width: 60%;
+        text-align: left;
+        
+    }
+    #closeIcon{
+        position: relative;
+        font-size: 30px;
+        left: -4%;
+        color:rgba(0, 0, 0, 0.5) ;
+    }
+
+    #apply{
+        background-color: red;
+        border-radius: 10px;
+    }
+/* 
+    .menus ul li{
+        margin-left: -10%;
+    } */
+}

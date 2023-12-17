@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <script src="https://kit.fontawesome.com/188d62c901.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/student_dash.css">
+</head>
+<body>
+   
+        
+    <button id="menuButtonMob" class="menu-btn-mob" >
+        <i class="fa-solid fa-bars"></i>
+    
+    </button>
+        <!-- <div class="left-main-mob" id="menuList"> -->
+            
+            
+            <div class="sidelinksMob">
+                <button id="closeIcon" class="close-icon" >&#10006;</button>
+                <ul  class="menu-list">
+                    <li><a href="index.html"> <i class="fa-solid fa-house"></i><span>Home</span> </a></li>
+    
+                    <li><a href="digitalskills.html"><i class="fa-brands fa-digital-ocean"></i><span>Digital skills</span> </a></li>
+    
+                    <li><a href="contributor.html"><i class="fa-solid fa-people-group"></i><span>Contributors</span> </a></li>
+    
+                    <li><a href="collaborator.html"><i class="fa-solid fa-person-chalkboard"></i><span>Collaborators</span></a></li>
+    
+                    <li><a href="profile-redesign.html"><i class="fa-solid fa-address-card"></i><span>Profile</span></a></li>
+    
+                    <li><a href="#"><i class="fa-solid fa-list-check"></i><span class="expansion-link" onclick="toggleContent()">Tasks</span></a></li>
+                    <div class="hidden-content" id="expandableContent">
+                        <li><a href="new-task.html">Do Task</a></li>
+                        <li><a href="task-submit.html">Submit Task</a></li>
+                      </div>
+    
+                    <li id="apply"><a href="#">
+                        <span>Apply for internship</span></a></li>
+                </ul>   
+            </div>
+        <!-- </div>  -->
+ 
+        
+    
+    <div class="main-container">
+        <!-- <button id="menuButton" class="menu-btn" onclick="toggleDropdown()">
+            <span id="menuIcon">&#9776;</span>
+            <span id="closeIcon" class="close-icon">&#10006;</span>
+        </button> -->
+        <div class="left-main" id="menuList">
+            
+            <div class="sidelinks">
+                <ul  class="menu-list">
+                    <li><a href="index.html"> <i class="fa-solid fa-house"></i><span>Home</span> </a></li>
+
+                    <li><a href="digitalskills.html"><i class="fa-brands fa-digital-ocean"></i><span>Digital skills</span> </a></li>
+
+                    <li><a href="contributor.html"><i class="fa-solid fa-people-group"></i><span>Contributors</span> </a></li>
+
+                    <li><a href="new-collaborator.html"><i class="fa-solid fa-person-chalkboard"></i><span>Collaborators</span></a></li>
+
+                    <li><a href="profile-redesign.html"><i class="fa-solid fa-address-card"></i><span>Profile</span></a></li>
+
+                    <li><a href="#"><i class="fa-solid fa-list-check"></i><span class="expansion-link" onclick="toggleContent()">Tasks</span></a></li>
+                    <div class="hidden-content" id="expandableContent">
+                        <li><a href="new-task.html">Do Task</a></li>
+                        <li><a href="task-submit.html">Submit Task</a></li>
+                      </div>
+                    <li id="apply"><a href="#">
+                        <span>Apply for internship</span></a></li>
+                </ul>
+                
+                
+            </div>
+            <!-- this is the container holding the profile picture on the down part of the side bar -->
+            <div class="dp">
+                <div id="dp"><img src="./images/profile-pix.JPG" alt=""></div>
+                <span>Hilson I. Iyke</span>
+            </div>
+            
+        </div>
+        <!-- The side menu ends here -->
+
+        <!-- here is the start of the middle sectiion called mid-main -->
+        <div class="mid-main">
+            <!-- here is the topside. this top-main is for flexing of it's content. which are a welcome word and today's date powered by javascript -->
+            <div class="top-main">
+                <div class="welcome"><h3>EMEX GLOBAL INITIATIVE</h3></div>
+                <div id="dateUpdate"></div>
+                <!-- this is the mobile account dropdown -->
+        <div class="account-mob">
+            <div id="pix-mob"><img src="./images/profile-pix.JPG" alt=""><i class="fa-solid fa-circle-chevron-down"></i></div> 
+            <div class="account-menu-mob">
+                <a href="#">Settings</a>
+                <a href="#">Support</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="logout.css">Log Out</a>
+            </div>
+        </div>
+
+            </div>
+            <!-- Search bar -->
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i><input type="text" name="" id="" placeholder="wants to search for something?">
+            </div>
+
+            <!-- <div class="try">
+                <div class="try-image">
+                    <div class="try-color">Checking checking checkin</div>
+                </div>
+            </div> -->
+
+
+
+            <!-- A box holding the cards -->
+            <div class="big-midbox">
+                <div class="big-content">
+                    <div class="big-top">
+                        <h5>Welcome back<br> <span id="user">Hilson</span> </h5>
+                    </div>
+                
+                    <!-- where to flex the cards -->
+                    <div class="card-flex">
+                        <!-- first card -->
+                        
+                        <!-- second card -->
+                        <div class="track-card oransi">
+                            
+                            <div id="progress">
+                                <h3>Admission Status</h3>
+                                <span id=not-admitted>Not Admitted</span> 
+                                <!-- <div class="track">
+                                    <div id="trackBar">
+                                
+                                    </div>
+                                </div>  -->
+                            </div>
+                        </div>
+
+                        <div class="track-card">
+                            
+                            <div id="progress">
+                                <h3>Track Progress</h3>
+                                <span>75%</span> 
+                                <div class="track">
+                                    <div id="trackBar">
+                                
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <div class="track-card vihrea">
+                            
+                            <div id="progress">
+                                <h3>Task Progress</h3>
+                                <span>45%</span> 
+                                <!-- <div class="track">
+                                    <div id="trackBar">
+                                
+                                    </div>
+                                </div>  -->
+                            </div>
+                        </div>
+                        <!-- the third card -->
+                        
+                </div>
+                </div>
+            </div>
+            <!-- here is where the boxes for upcoming courses -->
+
+
+            <div class="upcoming">
+                <div class="box1 box">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <span>Computer Networking</span>
+                </div>
+                <div class="box2 box">
+                    <i class="fa-solid fa-database"></i>
+                    <span>DataBase (MySQL)</span>
+                </div>
+                <div class="box3 box">
+                    <i class="fa-solid fa-computer"></i>
+                    <span>UX/UI design</span>
+                </div>
+            </div>
+
+            <!-- the upcoming program boxes end here -->
+        </div>
+
+        
+
+
+    <!-- here is the right side bar -->
+        <div class="right-main">
+            <div class="account">
+                <div id="pix"><img src="./images/profile-pix.JPG" alt=""><i class="fa-solid fa-circle-chevron-down"></i></div> 
+                <div class="account-menu">
+                    <a href="#">Settings</a>
+                    <a href="#">Support</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="logout.html">Log Out</a>
+                </div>
+            </div>
+            <!-- another section of the right side bar -->
+            <div class="projects">
+                
+                <div class="msg">new messages</div>
+                <div class="john lee">
+                    <div class="j-image"><img src="/images/profile-pix.JPG" alt=""></div>
+                     <div id="name"><span> Mikel Obi</span> <br><span id="em">mike@emex.com</span></div>
+                </div>
+
+                <div class="john">
+                    <div class="j-image"><img src="/images/profile-pix.JPG" alt=""></div>
+                     <div id="name"><span> Ade Love</span> <br><span id="em">ade@emex.com</span></div>
+                </div>
+
+                <!-- this is the 3rd message in the right side bar -->
+                <div class="john lee">
+                    <div class="j-image"><img src="/images/profile-pix.JPG" alt=""></div>
+                     <div id="name"><span> Pride Omayi</span> <br><span id="em">pride@emex.com</span></div>
+                </div>
+            </div>
+            <!-- <div class="current">
+                <h3>Current Project</h3>
+                <a href="#">E-learning portal</a>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+    <!-- javacript for date display -->
+    <script src="date.js"></script>
+    <script src="scripts.js"></script>
+    <script src="script.js"></script>
+    <script src="task-expand.js"></script>
+</body>
+</html>

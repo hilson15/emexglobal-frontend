@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Task</title>
+    <script src="https://kit.fontawesome.com/188d62c901.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/tast-submit.css">
+</head>
+<body>
+   
+    <div class="main-container">
+        <button id="navList"><i class="fa-solid fa-bars"></i></button>
+        <div class="main-flex">
+            
+            <div class="sidebar">
+                
+                  <!--this is the left side bar -->
+        
+        
+            <!-- Sidebar content goes here -->
+            
+            <div class="menus">
+                <button id="closeIcon" class="close-icon">&#10006;</button>
+                <ul>
+                    <li><a href="index.html"> <i class="fa-solid fa-house"></i><span>Home</span> </a></li>
+
+                    <li><a href="digitalskills.html"><i class="fa-brands fa-digital-ocean"></i><span>Digital skills</span> </a></li>
+
+                    <li><a href="new-collaborator.html"><i class="fa-solid fa-people-group"></i><span>Collaborators</span> </a></li>
+
+                    <li><a href="contributor.html"><i class="fa-solid fa-person-chalkboard"></i><span>Contributors</span></a></li>
+
+                    <li><a href="profile-redesign.html"><i class="fa-solid fa-address-card"></i><span>Profile</span></a></li>
+
+                    <li><a href="#"><i class="fa-solid fa-list-check"></i><span class="expansion-link" onclick="toggleContent()">Tasks</span></a></li>
+                    <div class="hidden-content" id="expandableContent">
+                        <li><a href="new-task.html">Do Task</a></li>
+                        <li><a href="task-submit.html">Submit Task</a></li>
+                      </div>
+    
+                    <li id="apply"><a href="#">
+                        <span>Apply for internship</span></a></li>
+                </ul>
+            </div>
+            </div> <!--sidebar-->
+
+            <!-- creating the div for the main-section -->
+
+
+            <div class="main-section">
+                <div class="icon-search">
+                    <input type="text" placeholder="Search here"><i class="fa-solid fa-magnifying-glass"></i> <span> <img src="/images/profile-pix.JPG" alt=""></span>
+                </div> <!--the horizontal bar holding profile picture and search bar-->
+
+                <div class="intro">
+                   <a href="tast-track.html"><h1>Task collections Page</h1></a> 
+                    <p>Share a screenshot of your task
+                        <br><br>
+                        Copy and paste the link to the task path <br><br>
+                        after submission wait for approval from our team 
+
+                        <h1>Please submit all 3 tasks before proceeding to the dashboard
+                            You only submitted <span id="submission-track">4</span>  Task</h1>
+                    </p>
+                       
+                </div><!--introduction div-->
+
+
+
+
+                <div class="submit-form">
+                    <form action="">
+                        <label for="task">Task</label><br>
+                        <select name="task" id="task">
+                            <option value="">Follow this twitter account</option>
+                            <option value="">Subscribe to our official youtube channel</option>
+                                <option value="">Use our flier as whatsapp status</option>
+                        </select>
+                        <br><br>
+
+                        <label for="link">Social Media Link</label>
+                        <input type="text" placeholder="enter your social media profile link">
+
+
+                        <br><br>
+
+                        <label for="screenshot">screen shot</label>
+                        <input type="file" name="browse" id="screenshot">
+
+                        <br><br>
+                        <button id="send">Submit Assignment</button>
+                    </form>
+                </div>
+
+                
+
+            </div><!--main section div-->
+        </div> <!--main-flex div-->
+
+    </div> <!--main container div-->
+
+
+
+    <script src="cohort-close.js"></script>
+    <script src="cohort.js"></script>
+    <script src="task-expand.js"></script>
+</body>
+</html>

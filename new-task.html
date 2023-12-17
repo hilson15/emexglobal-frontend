@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Task</title>
+    <script src="https://kit.fontawesome.com/188d62c901.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/new-task.css">
+</head>
+<body>
+   
+    <div class="main-container">
+        <button id="navList"><i class="fa-solid fa-bars"></i></button>
+        <div class="main-flex">
+            
+            <div class="sidebar">
+                
+                  <!--this is the left side bar -->
+        
+        
+            <!-- Sidebar content goes here -->
+            
+            <div class="menus">
+                <button id="closeIcon" class="close-icon">&#10006;</button>
+                <ul>
+                    <li><a href="index.html"> <i class="fa-solid fa-house"></i><span>Home</span> </a></li>
+
+                    <li><a href="digitalskills.html"><i class="fa-brands fa-digital-ocean"></i><span>Digital skills</span> </a></li>
+
+                    <li><a href="new-collaborator.html"><i class="fa-solid fa-people-group"></i><span>Collaborators</span> </a></li>
+
+                    <li><a href="contributor.html"><i class="fa-solid fa-person-chalkboard"></i><span>Contributors</span></a></li>
+
+                    <li><a href="profile-redesign.html"><i class="fa-solid fa-address-card"></i><span>Profile</span></a></li>
+
+                    <li><a href="#"><i class="fa-solid fa-list-check"></i><span class="expansion-link" onclick="toggleContent()">Tasks</span></a></li>
+                    <div class="hidden-content" id="expandableContent">
+                        <li><a href="new-task.html">Do Task</a></li>
+                        <li><a href="task-submit.html">Submit Task</a></li>
+                      </div>
+    
+                    <li id="apply"><a href="#">
+                        <span>Apply for internship</span></a></li>
+                </ul>
+            </div>
+            </div> <!--sidebar-->
+
+            <!-- creating the div for the main-section -->
+
+
+            <div class="main-section">
+                <div class="icon-search">
+                    <input type="text" placeholder="Search here"><i class="fa-solid fa-magnifying-glass"></i> <span><img src="/images/profile-pix.JPG" alt=""></span>
+                </div> <!--the horizontal bar holding profile picture and search bar-->
+
+                <div class="intro">
+                    <h1>Complete These tasks before proceeding</h1>
+                    <p>Congratulations! <span id="user">hilson1</span>  you are a few steps ahead of your selection to join the next software engineering team.
+                        NB: a candidate must complete these four tasks before being selected for the training </p>
+                        <button>Submit your task here</button>
+                </div><!--introduction div-->
+
+                <!-- below now is the div to flex the 3 tasks cards -->
+
+                <div class="task-flex">
+                    <div class="cards"><img src="/images/twit.webp" alt="">
+                    
+                    <h3><a href="#">follow this twitter account</a></h3>
+                    <p>click on the take task link, follow this account, and share the pinned Twitter</p>
+                    <br>
+
+                    
+                    <p>take a screenshot and upload it to the task collection page.</p>
+                    <br>
+                    
+                    <p>Note: If you did not participate in this task, you may not be selected</p>
+
+                    <button>take task</button>
+                    </div>
+                    <!-- end of first card for twitter task -->
+
+                    <div class="cards">
+                        <img src="/images/youtube.png" alt="">
+                    
+                    <h3><a href="#">Subscribe to our youtube channel</a></h3>
+                    <p>click on the take task link, subscribe to  our youtube channel </p>
+
+                    <br>
+                    <p>take a screenshot and upload it to the task collection page.</p>
+                    <br>
+                    <p>Note: If you did not participate in this task, you may not be selected</p>
+
+                    <button>take task</button>
+                    </div>
+                    <!-- here ends the second card which is for youtube task -->
+                    <div class="cards">
+                        <img src="/images/whatsapp.jpg" alt="">
+                    
+                    <h3><a href="#">Use our flier as your whatsapp status</a></h3>
+                    <p>click on the take task link, follow the link to download our training flyer, and share the flyer on your WhatsApp status </p>
+
+                    <br>
+                    <p>take a screenshot and upload it to the task collection page.</p>
+                    <br>
+                    <p>Note: If you did not participate in this task, you may not be selected</p>
+
+                    <button>take task</button>
+                    </div>
+                </div><!--the card flex div-->
+
+            </div><!--main section div-->
+        </div> <!--main-flex div-->
+
+    </div> <!--main container div-->
+
+
+
+    <script src="cohort-close.js"></script>
+    <script src="cohort.js"></script>
+
+    <script src="task-expand.js"></script>
+</body>
+</html>

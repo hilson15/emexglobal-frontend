@@ -1,0 +1,411 @@
+body{
+    background-image: url(/images/bg.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+}
+.main-container{
+    width: 100%;
+   margin: 0;
+   /* min-height: 100vh; */
+}
+.main-flex{
+    display: flex;
+    width: 100%;
+    
+}
+#navList{
+    display: none;
+
+}
+#closeIcon{
+    display: none;
+}
+
+
+#apply {
+    background-color: red;
+    border-radius: 10px;
+}
+
+
+
+.sidebar {
+    background-color:#0377de;
+    color: #fff;
+    padding: 20px;
+    width: 20%;
+    min-height: 100vh;
+    
+}
+.sidebar ul li{
+    list-style: none;
+    margin: 30px 0;
+    padding: 10px 8px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+.sidebar ul li:hover{
+    background-color: darkblue;
+}
+
+.hidden-content {
+    display: none;
+  }
+
+  /* Style for the link that triggers the expansion/collapse */
+  .expansion-link {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+
+  .hidden-content a{
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+      padding: 10px 5px;
+  }
+
+  .dp:hover .account-menu-mob{
+    display: block;
+}
+.account-menu-mob{
+    background-color: blue;
+    width: 25%;
+    padding: 5px 10px;
+}
+.account-menu-mob a{
+    color: white;
+}
+.menus{
+    display: block;
+    margin-left: -20%;
+    font-size: 16px;
+}
+
+.menus i{
+    margin-right: 4%;
+}
+
+.main-section{
+    width: 78%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5%;
+    /* background-color: rgba(192, 192, 192, 0.101); */
+    /* background-color: rgba(0,0,0,0); */
+    /* From https://css.glass */
+}
+
+.account-menu-mob{
+    display: none;
+   
+}
+
+.account-menu-mob a{
+    text-decoration: none;
+    display: block;
+}
+
+.welcome{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.text{
+    width: 70%;
+}
+.dp{
+    width: 30%;
+    margin-top: 5%;
+}
+#dp img{
+  width: 10%; 
+  border-radius: 50%;
+  
+}
+.box{
+    display: flex;
+    width: 100%;
+    min-height: 90%;
+    background: rgba(155, 155, 155, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.left{
+    width: 35%;
+    min-height: 60%;
+    border-radius: 15px;
+    background-color: white;
+    margin: 40px;
+    padding-bottom: 0px;
+    box-shadow: 0px 0px 5px 0.1px;
+    border-radius: 10px;
+}
+
+.p-port img{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+.info{
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 2px;
+}
+.info button{
+    background-color: rgb(214, 6, 6);
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+.info button:hover{
+    background-color: black;
+    color: white;
+}
+.right{
+    width: 50%;
+    min-height: 60%;
+    /* border-radius: 10px; */
+    
+    /* border-radius: 15px; */
+    margin: 40px;
+}
+    
+
+.top-right{
+    width: 100%;
+    height: 30%;
+    /* margin-top: 2%; */
+    background-color: white;
+    box-shadow: 0px 0px 5px 0.1px;
+    padding: 20px 0px;
+    border-radius: 15px;
+}
+    
+    
+
+.edit{
+    width: 80%;
+    margin: 10px auto;
+}
+.edit span{
+    font-weight: bolder;
+}
+
+.edit i{
+    margin: 0 20%;
+    cursor: pointer;
+}
+
+.edit button{
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.act , .no-act{
+    width: 80%;
+    margin: 30px auto;
+    list-style: none;
+}
+
+.act span , .no-act span{
+    float: right;
+}
+.act span{
+    background-color: rgb(214, 6, 6);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+.no-act span{
+    background: linear-gradient(90deg, yellow,rgb(81, 192, 81), rgb(20, 240, 20));
+    padding: 5px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.bottom-right{
+    width: 100%;
+    margin-top:10%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0.1px;
+     border-radius: 10px;
+     padding: 40px 0px;
+}
+     
+
+
+.filter{
+    width: 80%;
+    margin: 10px auto;
+}
+.filter button{
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+}
+.filter span{
+    font-weight: bolder;
+}
+
+.html, .css, .js, .bootstrap, .react{
+    width: 80%;
+    margin: 30px auto;
+    list-style: none;
+    color: black;
+}
+
+#html{
+    background: linear-gradient(90deg, yellow,rgb(81, 192, 81), rgb(20, 240, 20));
+    padding: 5px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    float: right;
+    color: white;
+}
+.html i, .css i{
+    background: linear-gradient(90deg, yellow,rgb(81, 192, 81), rgb(20, 240, 20));
+    color: transparent;
+    border-radius: 50%;
+    color: white;
+}
+
+#nill{
+    padding: 5px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    float: right;
+    background: linear-gradient(90deg, rgb(237, 124, 143),rgb(214, 6, 6));
+    color: white;
+}
+
+.js i, .bootstrap i, .react i{
+    color: transparent;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgb(237, 124, 143),rgb(214, 6, 6));
+    color: white;
+}
+
+
+/* mobile responsiveness */
+
+@media (min-width:300px) and (max-width:880px){
+    .main-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sidebar{
+        width: 100%;
+    }
+
+    .menus{
+        display: block;
+        margin-left: -10%;
+        font-size: 16px;
+    }
+    
+    .menus i{
+        margin-right: 4%;
+    }
+
+    #closeIcon{
+        margin-left: 6%;
+        font-size: 20px;
+        position: relative;
+        top: -20px;
+    }
+
+    #navList{
+        display: block;
+        width: 30px;
+        font-size:20px ;
+        position: relative;
+        top: 30px;
+        left: 10px;
+    }
+
+    #closeIcon{
+        display: block;
+    }
+    .text{
+        margin-top: 30px;
+    }
+    .text h1{
+        font-size: 15px;
+    }
+    .dp{
+        margin-top: 20px;
+    }
+
+    #dp img{
+        width: 40%;
+    }
+
+    .welcome{
+        width: 100%;
+    }
+
+    .main-section{
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 5%;
+    }
+    .box{
+        width: 90%;
+        
+        flex-direction: column;
+        margin-right: 100px;
+    }
+
+    .left{
+        width: 80%;
+        border-radius: 15px;
+        background-color: white;
+        /* margin: 40px; */
+        
+        padding-bottom: 0px;
+        box-shadow: 0px 0px 5px 0.1px;
+    }
+    .right{
+        width: 80%;
+        border-radius: 15px;
+        background-color: white;
+        /* margin: 40px; */
+        padding-bottom: 0px;
+        box-shadow: 0px 0px 5px 0.1px;
+    }
+
+    
+.dp:hover .account-menu-mob{
+    display: block;
+}
+.account-menu-mob{
+    width: 50%;
+}
+}

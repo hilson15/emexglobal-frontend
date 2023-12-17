@@ -1,0 +1,26 @@
+<div id="adm">
+                            <h3>Admission Status</h3>
+                        <div id="adminStatus">
+                            Not Admitted
+                        </div>
+                        </div>
+                        <div class="code">
+                            
+                            <i class="fa-solid fa-ticket"></i>
+                            <h4>Admission No:</h4>
+                            <div id="adminCode">Not Assigned</div>
+                        </div>
+
+Below is the track card sample
+
+<div class="track-card">
+                        <h3>Track Progress</h3>
+                        <div id="progress">
+                            <span>25%</span> 
+                            <div class="track">
+                                <div id="trackBar">
+                            
+                                </div>
+                            </div> 
+                        </div>
+                    </div>

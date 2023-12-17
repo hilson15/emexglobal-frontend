@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Page</title>
+    <script src="https://kit.fontawesome.com/188d62c901.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/new-profile.css">
+</head>
+<body>
+   
+    <div class="main-container">
+        
+        <div class="main-flex">
+            <button id="navList"><i class="fa-solid fa-bars"></i></button>
+            <div class="sidebar">
+                
+                  <!--this is the left side bar -->
+        
+        
+            <!-- Sidebar content goes here -->
+            
+            <div class="menus">
+                <button id="closeIcon" class="close-icon">&#10006;</button>
+                <ul>
+                    <li><a href="index.html"> <i class="fa-solid fa-house"></i><span>Home</span> </a></li>
+
+                    <li><a href="digitalskills.html"><i class="fa-brands fa-digital-ocean"></i><span>Digital skills</span> </a></li>
+
+                    <li><a href="new-collaborator.html"><i class="fa-solid fa-people-group"></i><span>Collaborators</span> </a></li>
+
+                    <li><a href="contributor.html"><i class="fa-solid fa-person-chalkboard"></i><span>Contributors</span></a></li>
+
+                    <li><a href="profile-redesign.html"><i class="fa-solid fa-address-card"></i><span>Profile</span></a></li>
+
+                    <li><a href="#"><i class="fa-solid fa-list-check"></i><span class="expansion-link" onclick="toggleContent()">Tasks</span></a></li>
+                    <div class="hidden-content" id="expandableContent">
+                        <li><a href="new-task.html">Do Task</a></li>
+                        <li><a href="task-submit.html">Submit Task</a></li>
+                      </div>
+    
+                    <li id="apply"><a href="#">
+                        <span>Apply for internship</span></a></li>
+                </ul>
+            </div>
+            </div> <!--sidebar-->
+
+            <!-- creating the div for the main-section -->
+
+
+            <div class="main-section">
+                
+                <div class="welcome">
+                    <div class="text">
+                        <h1>My Profile Page</h1>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    
+                    <div class="dp">
+                            <div id="dp"><img src="./images/passport.png" alt=""> <i class="fa-solid fa-circle-chevron-down"></i></div>
+                            <span>Hilson I. Iyke</span>
+
+                            <div class="account-menu-mob">
+                                <a href="#">Settings</a>
+                                <a href="#">Support</a>
+                                <a href="feedback.html">Feedback</a>
+                                <a href="logout.css">Log Out</a>
+                            </div>
+                    </div> 
+                   
+                </div><!--welcome note on the top with the profile image-->
+
+                <!-- main side of the profile -->
+
+                <div class="box">
+                    <div class="left">
+                        <div class="p-port">
+                            <img src="/images/passport.png" alt="">
+                        </div>
+
+                        <div class="info">
+                            <h3>My Profile</h3> 
+                       <p>NAME: Sam Raphael <br><br>
+
+                        EMAIL: samraphael@email.com<br><br>
+
+                        ACCOUNT STATUS: Onboarded</p> 
+                        <button>Save</button>
+                        </div>
+                       
+                    </div>
+                    <div class="right">
+                        <div class="top-right">
+
+                            <div class="edit">
+                                <span>Lorem, ipsum dolor.
+                                </span> <i class="fa-solid fa-magnifying-glass fa-beat-fade"></i> <button>Edit</button>
+                            </div>
+                           <hr>
+
+                           <div class="act">
+                            <li>Lorem, ipsum. <span>blocked</span></li>
+                           </div>
+
+                           <div class="no-act">
+                            <li>Lorem, ipsum. <span>unblocked</span></li>
+                           </div>
+
+                           
+                        </div>
+
+                        <div class="bottom-right">
+                            <div class="filter">
+                                <span>My Grades</span><button>Filter by</button>
+                            </div>
+                            <div class="html"><li><i class="fa-regular fa-circle"></i> HTML <span id="html">25%</span></li></div>
+                            <div class="css"><li><i class="fa-regular fa-circle"></i> CSS <span id="html">25%</span></li></div>
+                            <div class="js"><li><i class="fa-regular fa-circle"></i> JAVA SCRIPT <span id="nill">Nill</span></li></div>
+                            <div class="bootstrap"><li><i class="fa-regular fa-circle"></i> BOOTSTRAP <span id="nill">Nill</span></li></div>
+                            <div class="react"><li><i class="fa-regular fa-circle"></i> REACT <span id="nill">Nill</span></li></div>
+                            
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div><!--main section div-->
+        </div> <!--main-flex div-->
+
+    </div> <!--main container div-->
+
+
+
+    <script src="cohort-close.js"></script>
+    <script src="cohort.js"></script>
+    <script src="task-expand.js"></script>
+</body>
+</html>
