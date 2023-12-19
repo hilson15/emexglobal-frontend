@@ -6,6 +6,7 @@
     /* width: 300px; */
     background: transparent;
 }
+
 .sidelinks ul li{
     padding-bottom: 30px;
     list-style-type: none;
@@ -29,11 +30,21 @@
     height: 200px;
 }
 
-button{
+.col{
+    margin-bottom: 50px;
+}
+
+.button{
     background-color: #1d88ca;
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    padding: 8px 135px;
     border-style: none;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #4ca4db;
 }
 
 .hidden-content {
@@ -53,3 +64,22 @@ button{
       margin-left: 10px;
       padding: 10px 5px;
   }
+
+
+
+  @media (min-width:300px) and (max-width:800px){
+    #navList{
+        width: 40px;
+        height: 40px;
+        border: none;
+    }
+
+    #closeIcon{
+        width: 45px;
+        border: none;
+        margin-top: -2px;
+    }
+
+  }
+
+ 
