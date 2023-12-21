@@ -89,9 +89,13 @@ p a{
     padding-bottom: 20px;
     /* margin: auto; */
 }
+.codebox{
+    width: 50%;
+}
 .codebox input{
-    width: 60px;
+    width: 50%;
     height: 60px;
+    padding: 0 20px;
     /* font-size: 40px; */
 }
 .icon{
